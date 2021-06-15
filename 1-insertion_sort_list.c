@@ -42,7 +42,7 @@ void swap(listint_t *nodeA, listint_t *nodeB, listint_t **list)
 {
 	listint_t *temp1, *temp2;
 
-	if (nodeA == NULL && nodeB == NULL)
+	if (nodeA == NULL || nodeB == NULL)
 		return;
 
 	temp1 = nodeA->prev;
